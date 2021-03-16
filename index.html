@@ -3,13 +3,27 @@
     <head>
         <title>rangicus/10print</title>
 
-        <style>
-            * { margin: 0; padding: 0; }
-            canvas { display: block; }
-        </style>
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link rel="stylesheet" href="interface.css">
     </head>
     <body>
-        <script src="p5.min.js"></script>
+        <div class="container">
+            <h1>10 Print</h1>
+            <p>
+                A historic BASIC program rewritten for the HTML5 Canvas. <br>
+                <a href="./fullscreen">Fullscreen</a>
+            </p>
+            <hr>
+
+            <div id="container">
+                <iframe src="./fullscreen/" id="canvas" frameborder="0"></iframe>
+            </div>
+
+            <hr>
+        </div>
+
+        <script src="lib/jquery-3.5.1.min.js"></script>
+        <script src="lib/p5.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
